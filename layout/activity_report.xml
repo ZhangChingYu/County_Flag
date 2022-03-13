@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_resented_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:text="Total flags presented: 10" />
+
+    <TextView
+        android:id="@+id/tv_recognized"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_resented_questions"
+        android:textSize="24sp"
+        android:text="Recognized: 2" />
+
+    <TextView
+        android:id="@+id/tv_to_learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_recognized"
+        android:textSize="24sp"
+        android:text="To learn 8" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_above="@id/tv_resented_questions"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:text="Do you want to save your grade?" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_to_learn"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnSave"
+        android:text="YES" />
+</RelativeLayout>
